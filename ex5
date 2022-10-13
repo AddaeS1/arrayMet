@@ -1,0 +1,21 @@
+let pacientes = ['José', 'Pedro', 'Maria', 'João', 'Ana', 'Bárbara', 'Joana'];
+
+function fila1 (arr, operacao, nome){
+
+    if(operacao === 'atender'){
+        arr.shift();
+    }
+
+    if(operacao === 'agendar'){
+        arr.push(nome);
+    }
+
+    if(operacao === 'cancelar'){
+        let indiceNome = arr.indexOf(nome);
+        arr.splice(arr.indexOf(indiceNome), 1);
+    }
+    return arr;
+
+}
+
+console.log(fila1(pacientes,'cancelar','Addae'));

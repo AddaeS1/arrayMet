@@ -1,0 +1,31 @@
+let usuarios = [
+    {
+        nome: "João",
+        pets: ["Max"],
+    },
+    {
+        nome: "Ana",
+        pets: ["Pingo", "Lulu"],
+    },
+    {
+        nome: "Beatriz",
+        pets: ["Lessie"],
+    },
+    {
+        nome: "Carlos",
+        pets: ["Farofa", "Salsicha", "Batata"],
+    },
+    {
+        nome: "Antonio",
+        pets: ["Naninha"],
+    },
+]
+
+function petWho(nomePet){
+    for(let usuario of usuarios){
+        
+    }
+
+}
+
+console.log(separarArray(nomes, tamanhoDoGrupo));

@@ -1,0 +1,16 @@
+let pacientes = ['José', 'Pedro', 'Maria', 'João', 'Ana', 'Bárbara', 'Joana'];
+
+function fila1 (arr, operacao, nome){
+
+    if(operacao === 'atender'){
+        arr.shift()
+    }
+
+    if(operacao === 'agendar'){
+        arr.push(nome)
+    }
+    return arr;
+
+}
+
+console.log(fila1(pacientes,'agendar',"Addae"));

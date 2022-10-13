@@ -1,0 +1,21 @@
+const veiculos = ['Ford Ká', 'Ranger', 'Hilux', 'Corola', 'Fusca', 'Chevete', 'Brasilia'];
+const posicao = 3;
+
+function imprimeVeic(arr, indice){
+    let nvArr = [];
+    let limite = 3;
+    let i = indice;
+    for(item in arr){
+        nvArr.push(arr.slice( i, i + limite) )
+        i += limite
+        break;
+    }
+return nvArr;
+     
+}
+
+console.log(imprimeVeic(veiculos, posicao));
+
+
+
+/* façamos uma função que execute o slice a patir da posição passada , com um limite de 3 e retorne os próximos 3 itens.*/

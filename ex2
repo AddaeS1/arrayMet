@@ -1,0 +1,26 @@
+const nomes = ['Juninho', 'Vidal', 'Guido', 'Dani', 'Ruli', 'Diego'];
+const tamanhoDoGrupo = 4;
+
+
+function separarArray(arr, tamanho) {
+    let grupo1 = [];
+    let grupo2 = [];
+    let i = 0;
+     if(i < arr.length){
+      grupo1.push(arr.slice(i, i + tamanho));
+      i += tamanho;
+      
+     }else
+     if(arr.length > tamanho){
+      group2.push(arr.slice);
+      
+    }
+    return {grupo1, grupo2};
+    
+     }
+    
+
+
+  console.log(separarArray(nomes, tamanhoDoGrupo));
+  //lógica a ser aplicada: separador para a string grupo1 baseado no tamanho, o resto será pushado no array grupo2
+  
